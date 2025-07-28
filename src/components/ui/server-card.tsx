@@ -25,7 +25,13 @@ export function ServerCard() {
             <Badge variant="outline">Deathmatch</Badge>
           </div>
         </div>
-        <Button className="bg-orange-500 hover:bg-orange-500/80 text-white">
+        <Button
+          onClick={() =>
+            (window.location.href =
+              "steam://rungameid/730//+connect 100.65.16.234:27015")
+          }
+          className="bg-orange-500 hover:bg-orange-500/80 text-white"
+        >
           Conectar
         </Button>
       </div>

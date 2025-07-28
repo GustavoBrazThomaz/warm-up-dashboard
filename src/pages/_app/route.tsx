@@ -9,14 +9,12 @@ function RouteComponent() {
   const navigate = useNavigate();
 
   return (
-    <div className="px-48 py-8">
+    <div className="px-48 lg:px-16 py-8">
       <Tabs onValueChange={(value) => navigate({ to: `/${value}` })}>
-        <TabsList>
-          <TabsList>
-            <TabsTrigger value="perfil">Perfil</TabsTrigger>
-            <TabsTrigger value="servidores">Servidores</TabsTrigger>
-            <TabsTrigger value="skins">Skins</TabsTrigger>
-          </TabsList>
+        <TabsList className="w-full">
+          <TabsTrigger value="perfil">Perfil</TabsTrigger>
+          <TabsTrigger value="servidores">Servidores</TabsTrigger>
+          <TabsTrigger value="skins">Skins</TabsTrigger>
         </TabsList>
       </Tabs>
 
