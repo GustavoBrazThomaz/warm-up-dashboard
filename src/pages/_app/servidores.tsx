@@ -4,12 +4,13 @@ import { Input } from "@/components/ui/input";
 import { ServerCard } from "@/components/ui/server-card";
 import { createFileRoute } from "@tanstack/react-router";
 
-export const IndexRoute = createFileRoute("/_app/")({
-  component: RouteComponent,
-});
-
 export const Route = createFileRoute("/_app/servidores")({
   component: RouteComponent,
+  head: () => ({
+    meta: [{
+      title: "Warm-up | Servidores"
+    }]
+  })
 });
 
 function RouteComponent() {
