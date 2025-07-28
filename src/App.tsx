@@ -1,9 +1,16 @@
-import { Button } from "./components/ui/button";
+import { createRouter, RouterProvider } from "@tanstack/react-router";
+
+import { routeTree } from "./routeTree.gen";
+import { ThemeProvider } from "./components/theme-provider";
+
+const router = createRouter({ routeTree });
 
 function App() {
   return (
     <>
-      <Button>Teste</Button>
+      <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </>
   );
 }
