@@ -30,7 +30,7 @@ export function ServerCard() {
             (window.location.href =
               "steam://rungameid/730//+connect 100.65.16.234:27015")
           }
-          className="bg-orange-500 hover:bg-orange-500/80 text-white"
+          className="bg-orange-500 hover:bg-orange-500/80 text-white cursor-pointer"
         >
           Conectar
         </Button>

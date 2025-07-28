@@ -24,7 +24,7 @@ function RouteComponent() {
       </Card>
 
       <div className="space-y-4 mt-8 w-full">
-        {Array.from({ length: 8 }).map((_, index) => (
+        {Array.from({ length: 1 }).map((_, index) => (
           <ServerCard key={index} />
         ))}
       </div>
